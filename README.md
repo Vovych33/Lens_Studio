@@ -14,18 +14,18 @@
 - ✅ Активные ссылки навигации
 
 ## 📁 Структура проекта
-my-web-site/
-├── index.html
-├── about.html
-├── contact.html
-├── blog.html
-├── css/style.css
-├── js/script.js
-├── img/
+my-web-site/  
+├── index.html  
+├── about.html  
+├── contact.html  
+├── blog.html  
+├── css/style.css  
+├── js/script.js  
+├── img/  
 └── README.md
 
 ## 🌐 GitHub Pages
-Сайт доступен по адресу: `https://<your-username>.github.io/my-web-site/`
+Сайт доступен по адресу: `https://vovych33.github.io/Lens_Studio/`
 
 ## 👥 Разработчик
 - **Vovych33** — верстка, стили, JS, документация.
