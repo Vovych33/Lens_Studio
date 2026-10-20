@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>О проекте — Lens Studio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo"><span class="logo__icon">📷</span><span class="logo__text">Lens<strong>Studio</strong></span></a>
+      <button class="burger" id="burger" aria-label="Открыть меню">☰</button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="about.html" class="nav__link active">О проекте</a>
+        <a href="blog.html" class="nav__link">Блог</a>
+        <a href="contact.html" class="nav__link">Контакты</a>
+        <button class="theme-btn" id="themeToggle" title="Сменить тему">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="section__title">О проекте</h1>
+
+    <div class="about">
+      <div class="about__text">
+        <h2>Кто я</h2>
+        <p>Меня зовут Анна, я фотограф с 10-летним опытом. Начинала с уличной съёмки на плёнку, а сейчас работаю с частными клиентами и брендами.</p>
+        <p>Моя цель — создавать не просто красивые кадры, а истории, которые хочется пересматривать спустя годы.</p>
+      </div>
+      <img class="about__img reveal" src="https://picsum.photos/seed/anna/500/600" alt="Анна — фотограф" loading="lazy">
+    </div>
+
+    <h2 class="section__title">Цели и задачи</h2>
+    <ul class="list reveal">
+      <li>Помогать людям сохранять важные моменты жизни.</li>
+      <li>Развивать культуру качественной фотографии в городе.</li>
+      <li>Работать с брендами и создавать продающий контент.</li>
+    </ul>
+
+    <h2 class="section__title">История разработки</h2>
+    <ol class="timeline reveal">
+      <li><strong>2015</strong> — первые съёмки, обучение на плёнке.</li>
+      <li><strong>2018</strong> — первая персональная выставка.</li>
+      <li><strong>2021</strong> — переход в коммерческую фотографию.</li>
+      <li><strong>2025</strong> — открытие собственной студии.</li>
+    </ol>
+
+    <h2 class="section__title">Команда</h2>
+    <div class="cards">
+      <article class="card reveal">
+        <img src="https://picsum.photos/seed/team1/400/400" alt="Анна" loading="lazy">
+        <h3>Анна</h3>
+        <p>Основатель, фотограф</p>
+      </article>
+      <article class="card reveal">
+        <img src="https://picsum.photos/seed/team2/400/400" alt="Максим" loading="lazy">
+        <h3>Максим</h3>
+        <p>Ретушёр и цветокорректор</p>
+      </article>
+      <article class="card reveal">
+        <img src="https://picsum.photos/seed/team3/400/400" alt="Оля" loading="lazy">
+        <h3>Оля</h3>
+        <p>Менеджер проектов</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Lens Studio. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

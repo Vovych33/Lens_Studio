@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты — Lens Studio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo"><span class="logo__icon">📷</span><span class="logo__text">Lens<strong>Studio</strong></span></a>
+      <button class="burger" id="burger" aria-label="Открыть меню">☰</button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="about.html" class="nav__link">О проекте</a>
+        <a href="blog.html" class="nav__link">Блог</a>
+        <a href="contact.html" class="nav__link active">Контакты</a>
+        <button class="theme-btn" id="themeToggle" title="Сменить тему">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="section__title">Связаться со мной</h1>
+    <div class="contact-wrap">
+      <form class="form" id="contactForm" novalidate>
+        <label>
+          Ваше имя
+          <input type="text" name="name" required placeholder="Иван" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="ivan@mail.ru" />
+        </label>
+        <label>
+          Сообщение
+          <textarea name="message" rows="5" required placeholder="Хочу записаться на съёмку..."></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary">Отправить</button>
+        <p class="form__status" id="formStatus"></p>
+      </form>
+
+      <aside class="contact-info">
+        <h2>Контакты</h2>
+        <p>📞 +7 (900) 000-00-00</p>
+        <p>✉️ hello@lens.studio</p>
+        <p>📍 г. Москва, ул. Пушкина, 1</p>
+        <p>🕘 Пн–Пт, 10:00–19:00</p>
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=37.6%2C55.75%2C37.65%2C55.77&amp;layer=mapnik"
+          style="border:0;width:100%;height:220px;border-radius:12px;margin-top:1rem"
+          loading="lazy"></iframe>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Lens Studio. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lens Studio — Фотограф-визитка</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">📷</span>
+        <span class="logo__text">Lens<strong>Studio</strong></span>
+      </a>
+      <button class="burger" id="burger" aria-label="Открыть меню">☰</button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link active">Главная</a>
+        <a href="about.html" class="nav__link">О проекте</a>
+        <a href="blog.html" class="nav__link">Блог</a>
+        <a href="contact.html" class="nav__link">Контакты</a>
+        <button class="theme-btn" id="themeToggle" title="Сменить тему">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1 class="hero__title">Ловлю <span class="accent">моменты</span>,<br>которые хочется помнить</h1>
+          <p class="hero__subtitle">
+            Профессиональная фотография для людей и брендов. Портреты, love-story, репортаж, продуктовая съёмка.
+          </p>
+          <div class="hero__actions">
+            <a href="contact.html" class="btn btn--primary">Записаться на съёмку</a>
+            <a href="about.html" class="btn btn--ghost">Обо мне</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="https://picsum.photos/seed/lens/600/700" alt="Фотограф за работой" loading="lazy" />
+          <span class="hero__badge">10 лет опыта</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Статистика -->
+    <section class="stats container">
+      <div class="stat"><span class="stat__num" data-count="320">0</span><span>съёмок</span></div>
+      <div class="stat"><span class="stat__num" data-count="140">0</span><span>клиентов</span></div>
+      <div class="stat"><span class="stat__num" data-count="12">0</span><span>наград</span></div>
+      <div class="stat"><span class="stat__num" data-count="10">0</span><span>лет опыта</span></div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="section container">
+      <h2 class="section__title">Что я снимаю</h2>
+      <div class="cards">
+        <article class="card reveal">
+          <img src="https://picsum.photos/seed/portrait/400/300" alt="Портрет" loading="lazy">
+          <h3>Портрет</h3>
+          <p>Естественные и студийные портреты, которые подчёркивают вашу индивидуальность.</p>
+        </article>
+        <article class="card reveal">
+          <img src="https://picsum.photos/seed/love/400/300" alt="Love story" loading="lazy">
+          <h3>Love Story</h3>
+          <p>Тёплые истории для двоих: от первой встречи до важных дат.</p>
+        </article>
+        <article class="card reveal">
+          <img src="https://picsum.photos/seed/product/400/300" alt="Продукт" loading="lazy">
+          <h3>Продукт</h3>
+          <p>Съёмка для брендов, маркетплейсов и соцсетей с чистой цветокоррекцией.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Новости -->
+    <section class="section container">
+      <h2 class="section__title">Последние новости</h2>
+      <ul class="news">
+        <li class="news__item reveal">
+          <time>12.05.2025</time>
+          <div>
+            <h4>Открыт набор на летние мини-сессии</h4>
+            <p>Всего 15 слотов на июнь-июль. Успейте забронировать.</p>
+          </div>
+        </li>
+        <li class="news__item reveal">
+          <time>02.05.2025</time>
+          <div>
+            <h4>Новая студия в центре города</h4>
+            <p>Теперь можно сниматься в интерьере лофта с панорамными окнами.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Lens Studio. Все права защищены.</p>
+      <div class="footer__links">
+        <a href="about.html">О проекте</a>
+        <a href="blog.html">Блог</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
